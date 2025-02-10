@@ -1,0 +1,6 @@
+.env
+list_of_classes.txt
+venv
+bot_logs
+__pycache__
+.git
