@@ -9,7 +9,7 @@ users = Table(
     "users",
     metadata_obj,
     Column("id", BigInteger, primary_key=True),
-    Column("user_tg_id", BigInteger, nullable=False),
+    Column("user_tg_id", BigInteger, nullable=False, unique=True),
     Column("username", String, nullable=True),
     Column("banned", Boolean, default=False, nullable=False),
     Column("mark_permission", Boolean, default=False, nullable=False),
